@@ -49,24 +49,39 @@ ini_set('display_errors', 'On');
 <html>
 	<head>
 
-   		<meta property="fb:app_id" content="807373209363035" /> 
-	    <meta property="og:title" content="<?php echo $ara[0]['name']; ?> - Rotaract Club V.V.P." />
+		<meta property="fb:app_id" content="807373209363035" /> 
+		<meta property="og:title" content="<?php $title ?>" />
 		<meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Rotaract Club of V.V.P. Engineering College" />
-        <link rel="canonical" href="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>"/>
-        <meta property="og:url" content="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>" />
-        <meta property="og:image" content="<?php echo $image; ?>" />
-        <meta property="og:description"   content="<?php echo $description; ?>" />
-        <meta property="og:author"   content="Tirthraj Barot" />
-        <meta NAME="keywords" CONTENT="rotaract,club,vvp,engineering,college,V.V.P.Engineering College,Best Rotaract,Social Service,Students,rajkot,Tirthraj Barot, rao infotech, sachin parikh, pravin kaka, rotary midtown, rotaract club vvp">
-        <meta NAME="robot" CONTENT="index,follow">
-        <meta NAME="author" CONTENT="Tirthraj Barot">
-        <meta NAME="language" CONTENT="English">
-        <meta NAME="url" content="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>" />
-		<meta NAME="description"   content="<?php echo $description; ?>" />
-		<meta NAME="title"   content="<?php echo $title; ?>" />
+		<meta property="og:site_name" content="<?php echo $site_name; ?>" />
+
+		<link rel="canonical" href="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>"/>
+
+		<meta property="og:url" content="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>" />
+		<meta property="og:image" content="<?php echo $image; ?>" />
+		<meta property="og:description"   content="<?php echo $description; ?>" />
+		<meta property="og:author"   content="<?php echo $author; ?>" />
+
+		<meta name="author" content="<?php echo $author; ?>">
+		<meta name="language" content="English">
+
+		<meta name="url" content="http://www.vvprotaract.club/server/guest/createEventToShareFB.php?id=<?php echo $id; ?>" />
+		<meta name="description"   content="<?php echo $description; ?>" />
+		<meta name="title"   content="<?php echo $title; ?>" />
 	</head>
 
 	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-header">Share Social!</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" ui-view>
+					
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
